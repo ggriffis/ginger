@@ -1,4 +1,9 @@
 Ginger::Application.routes.draw do
+  root to: 'main#index'
+  get 'contact/show', as: :contact
+  get 'web_developer/show', as: :web_developer
+  get 'soprano/show', as: :soprano
+  get 'flutist/show', as: :flutist
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +44,7 @@ Ginger::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
